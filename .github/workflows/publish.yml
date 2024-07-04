@@ -37,6 +37,7 @@ jobs:
               run: |
                   sudo apt update
                   sudo apt install -y gcc-aarch64-linux-gnu
+                  make compile-linux
                   make compile-linux-x86
                   make compile-linux-arm64
                   make pack-linux
